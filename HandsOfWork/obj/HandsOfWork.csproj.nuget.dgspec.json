@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\matheus.brenner\\RiderProjects\\HandsOfWork\\HandsOfWork\\HandsOfWork.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\matheus.brenner\\RiderProjects\\HandsOfWork\\HandsOfWork\\HandsOfWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\matheus.brenner\\RiderProjects\\HandsOfWork\\HandsOfWork\\HandsOfWork.csproj",
+        "projectName": "HandsOfWork",
+        "projectPath": "C:\\Users\\matheus.brenner\\RiderProjects\\HandsOfWork\\HandsOfWork\\HandsOfWork.csproj",
+        "packagesPath": "C:\\Users\\matheus.brenner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matheus.brenner\\RiderProjects\\HandsOfWork\\HandsOfWork\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matheus.brenner\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

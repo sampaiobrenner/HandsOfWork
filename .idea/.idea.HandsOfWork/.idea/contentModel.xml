@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\matheus.brenner\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\matheus.brenner\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_HandsOfWork.-1392311768.00" t="ExcludeRecursive" />
+    <e p="C:\Users\matheus.brenner\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\matheus.brenner\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\matheus.brenner\RiderProjects\HandsOfWork" t="IncludeFlat">
+      <e p="HandsOfWork" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="Categoria.cs" t="Include" />
+          <e p="ModoOperacao.cs" t="Include" />
+          <e p="Pessoa.cs" t="Include" />
+          <e p="PessoaFisica.cs" t="Include" />
+          <e p="PessoaJuridica.cs" t="Include" />
+          <e p="Produto.cs" t="Include" />
+          <e p="SimpleId.cs" t="Include" />
+        </e>
+        <e p="HandsOfWork.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="HandsOfWork.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Services" t="Include">
+          <e p="ProdutoService.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="FormCadastroCliente.cs" t="Include" />
+          <e p="FormCadastroCliente.Designer.cs" t="Include" />
+          <e p="FormCadastroProduto.cs" t="Include" />
+          <e p="FormCadastroProduto.Designer.cs" t="Include" />
+          <e p="FormCadastroProduto.resx" t="Include" />
+          <e p="FormCliente.cs" t="Include" />
+          <e p="FormCliente.Designer.cs" t="Include" />
+          <e p="FormCliente.resx" t="Include" />
+          <e p="FormPrincipal.cs" t="Include" />
+          <e p="FormPrincipal.Designer.cs" t="Include" />
+          <e p="FormPrincipal.resx" t="Include" />
+          <e p="FormProduto.cs" t="Include" />
+          <e p="FormProduto.Designer.cs" t="Include" />
+          <e p="FormProduto.resx" t="Include" />
+        </e>
+      </e>
+      <e p="HandsOfWork.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
