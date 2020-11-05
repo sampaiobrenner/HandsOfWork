@@ -13,10 +13,8 @@ namespace HandsOfWork.Views
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            Visible = false;
             var formCadastroProduto = new FormCadastroProduto(ModoOperacao.Adicionar);
             formCadastroProduto.ShowDialog();
-            Visible = true;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)

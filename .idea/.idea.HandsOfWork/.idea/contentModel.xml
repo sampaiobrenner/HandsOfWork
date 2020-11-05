@@ -32,6 +32,7 @@
         <e p="Views" t="Include">
           <e p="FormCadastroCliente.cs" t="Include" />
           <e p="FormCadastroCliente.Designer.cs" t="Include" />
+          <e p="FormCadastroCliente.resx" t="Include" />
           <e p="FormCadastroProduto.cs" t="Include" />
           <e p="FormCadastroProduto.Designer.cs" t="Include" />
           <e p="FormCadastroProduto.resx" t="Include" />

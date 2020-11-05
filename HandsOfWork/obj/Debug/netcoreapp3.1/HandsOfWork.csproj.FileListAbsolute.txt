@@ -16,3 +16,4 @@ C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\obj\Debug\netcore
 C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\obj\Debug\netcoreapp3.1\HandsOfWork.Views.FormProduto.resources
 C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\obj\Debug\netcoreapp3.1\HandsOfWork.Views.FormCadastroProduto.resources
 C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\obj\Debug\netcoreapp3.1\HandsOfWork.Views.FormCliente.resources
+C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\obj\Debug\netcoreapp3.1\HandsOfWork.Views.FormCadastroCliente.resources

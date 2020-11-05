@@ -97,7 +97,7 @@ namespace HandsOfWork.Views
             this.Controls.Add(this.panel1);
             this.Name = "FormProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormProduto";
+            this.Text = "Listagem de produtos";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }

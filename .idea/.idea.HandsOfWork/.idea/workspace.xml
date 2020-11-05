@@ -4,11 +4,22 @@
     <projectFile>HandsOfWork/HandsOfWork.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76fb1bb3-65a3-4906-bc6c-b6795030fed5" name="Default Changelist" comment="" />
+    <list default="true" id="76fb1bb3-65a3-4906-bc6c-b6795030fed5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandsOfWork/Views/FormCadastroCliente.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOfWork/Views/FormCadastroCliente.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandsOfWork/Views/FormCliente.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOfWork/Views/FormCliente.Designer.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HandsOfWork/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -32,6 +43,7 @@
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jpjF28LxYzH8lib6q41gZL5bai" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -73,8 +85,17 @@
       <option name="presentableId" value="Default" />
       <updated>1604507820255</updated>
       <workItem from="1604507836843" duration="1339000" />
-      <workItem from="1604509266850" duration="827000" />
+      <workItem from="1604509266850" duration="1190000" />
+      <workItem from="1604610736173" duration="601000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1604510357653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604510357653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +105,8 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
