@@ -37,6 +37,8 @@ namespace HandsOfWork.Views
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNome = new System.Windows.Forms.TextBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,16 +48,18 @@ namespace HandsOfWork.Views
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.btnFechar);
-            this.panel1.Location = new System.Drawing.Point(35, 167);
+            this.panel1.Location = new System.Drawing.Point(58, 321);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(718, 69);
+            this.panel1.Size = new System.Drawing.Size(1195, 131);
             this.panel1.TabIndex = 4;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(555, 14);
+            this.btnSalvar.Location = new System.Drawing.Point(925, 27);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(137, 43);
+            this.btnSalvar.Size = new System.Drawing.Size(228, 83);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -63,9 +67,10 @@ namespace HandsOfWork.Views
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(27, 14);
+            this.btnFechar.Location = new System.Drawing.Point(45, 27);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(137, 43);
+            this.btnFechar.Size = new System.Drawing.Size(228, 83);
             this.btnFechar.TabIndex = 0;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -73,36 +78,59 @@ namespace HandsOfWork.Views
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(16, 23);
+            this.label1.Location = new System.Drawing.Point(27, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(118, 44);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome:";
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.cboCategoria);
             this.panel2.Controls.Add(this.lblNome);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(35, 25);
+            this.panel2.Location = new System.Drawing.Point(58, 48);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 122);
+            this.panel2.Size = new System.Drawing.Size(1195, 233);
             this.panel2.TabIndex = 6;
             // 
             // lblNome
             // 
-            this.lblNome.Location = new System.Drawing.Point(93, 20);
+            this.lblNome.Location = new System.Drawing.Point(155, 38);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(269, 20);
+            this.lblNome.Size = new System.Drawing.Size(446, 31);
             this.lblNome.TabIndex = 6;
+            // 
+            // cboCategoria
+            // 
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(155, 91);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(446, 33);
+            this.cboCategoria.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(27, 88);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 44);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Categoria:";
             // 
             // FormCadastroProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 252);
+            this.ClientSize = new System.Drawing.Size(1333, 485);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "FormCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de produtos";
@@ -110,6 +138,7 @@ namespace HandsOfWork.Views
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Button btnFechar;
@@ -120,5 +149,8 @@ namespace HandsOfWork.Views
         private System.Windows.Forms.TextBox lblNome;
 
         #endregion
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboCategoria;
     }
 }

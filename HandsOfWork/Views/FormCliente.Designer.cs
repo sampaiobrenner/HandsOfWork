@@ -36,7 +36,11 @@ namespace HandsOfWork.Views
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -46,16 +50,18 @@ namespace HandsOfWork.Views
             this.panel1.Controls.Add(this.btnExcluir);
             this.panel1.Controls.Add(this.btnNovo);
             this.panel1.Controls.Add(this.btnEditar);
-            this.panel1.Location = new System.Drawing.Point(39, 358);
+            this.panel1.Location = new System.Drawing.Point(65, 688);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(718, 69);
+            this.panel1.Size = new System.Drawing.Size(1195, 131);
             this.panel1.TabIndex = 4;
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(20, 14);
+            this.btnFechar.Location = new System.Drawing.Point(33, 27);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(137, 43);
+            this.btnFechar.Size = new System.Drawing.Size(228, 83);
             this.btnFechar.TabIndex = 3;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -63,18 +69,20 @@ namespace HandsOfWork.Views
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(555, 14);
+            this.btnExcluir.Location = new System.Drawing.Point(925, 27);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(137, 43);
+            this.btnExcluir.Size = new System.Drawing.Size(228, 83);
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(243, 14);
+            this.btnNovo.Location = new System.Drawing.Point(405, 27);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(137, 43);
+            this.btnNovo.Size = new System.Drawing.Size(228, 83);
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -82,24 +90,56 @@ namespace HandsOfWork.Views
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(400, 14);
+            this.btnEditar.Location = new System.Drawing.Point(667, 27);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(137, 43);
+            this.btnEditar.Size = new System.Drawing.Size(228, 83);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome";
+            this.nome.MinimumWidth = 8;
+            this.nome.Name = "nome";
+            this.nome.Width = 150;
+            // 
+            // email
+            // 
+            this.email.HeaderText = "E-mail";
+            this.email.MinimumWidth = 8;
+            this.email.Name = "email";
+            this.email.Width = 150;
+            // 
             // FormCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1333, 865);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nome,
+            this.email});
+            this.dataGridView1.Location = new System.Drawing.Point(65, 53);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(1195, 564);
+            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.Text = "dataGridView1";
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "FormCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de clientes";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Button btnEditar;
@@ -109,5 +149,9 @@ namespace HandsOfWork.Views
         private System.Windows.Forms.Panel panel1;
 
         #endregion
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -7,7 +7,6 @@
     <e p="C:\Users\matheus.brenner\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
     <e p="C:\Users\matheus.brenner\RiderProjects\HandsOfWork" t="IncludeFlat">
       <e p="HandsOfWork" t="IncludeRecursive">
-        <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Entities" t="Include">
           <e p="Categoria.cs" t="Include" />
