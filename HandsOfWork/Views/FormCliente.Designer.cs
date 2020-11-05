@@ -37,6 +37,7 @@ namespace HandsOfWork.Views
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfcnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -100,16 +101,25 @@ namespace HandsOfWork.Views
             // 
             // nome
             // 
+            this.nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nome.HeaderText = "Nome";
             this.nome.MinimumWidth = 8;
             this.nome.Name = "nome";
-            this.nome.Width = 150;
+            this.nome.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // cpfcnpj
+            // 
+            this.cpfcnpj.HeaderText = "CPF / CNPJ";
+            this.cpfcnpj.MinimumWidth = 8;
+            this.cpfcnpj.Name = "cpfcnpj";
+            this.cpfcnpj.Width = 150;
             // 
             // email
             // 
             this.email.HeaderText = "E-mail";
             this.email.MinimumWidth = 8;
             this.email.Name = "email";
+            this.email.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.email.Width = 150;
             // 
             // FormCliente
@@ -123,6 +133,7 @@ namespace HandsOfWork.Views
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
+            this.cpfcnpj,
             this.email});
             this.dataGridView1.Location = new System.Drawing.Point(65, 53);
             this.dataGridView1.Name = "dataGridView1";
@@ -149,9 +160,9 @@ namespace HandsOfWork.Views
         private System.Windows.Forms.Panel panel1;
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpfcnpj;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
     }
 }

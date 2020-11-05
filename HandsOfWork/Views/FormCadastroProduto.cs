@@ -13,6 +13,13 @@ namespace HandsOfWork.Views
         {
             _modoOperacao = modoOperacao;
             InitializeComponent();
+            CarregarCategorias();
+        }
+
+        private void CarregarCategorias()
+        {
+            var categoriaService = new CategoriaService();
+            cboCategoria.DataSource = categoriaService.ListarCategorias();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

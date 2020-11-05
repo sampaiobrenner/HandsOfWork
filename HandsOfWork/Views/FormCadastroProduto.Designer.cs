@@ -36,9 +36,9 @@ namespace HandsOfWork.Views
             this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblNome = new System.Windows.Forms.TextBox();
-            this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.lblNome = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -98,22 +98,6 @@ namespace HandsOfWork.Views
             this.panel2.Size = new System.Drawing.Size(1195, 233);
             this.panel2.TabIndex = 6;
             // 
-            // lblNome
-            // 
-            this.lblNome.Location = new System.Drawing.Point(155, 38);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(446, 31);
-            this.lblNome.TabIndex = 6;
-            // 
-            // cboCategoria
-            // 
-            this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(155, 91);
-            this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(446, 33);
-            this.cboCategoria.TabIndex = 7;
-            // 
             // label2
             // 
             this.label2.Location = new System.Drawing.Point(27, 88);
@@ -122,6 +106,24 @@ namespace HandsOfWork.Views
             this.label2.Size = new System.Drawing.Size(120, 44);
             this.label2.TabIndex = 5;
             this.label2.Text = "Categoria:";
+            // 
+            // cboCategoria
+            // 
+            this.cboCategoria.DisplayMember = "Descricao";
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(155, 91);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(446, 33);
+            this.cboCategoria.TabIndex = 7;
+            this.cboCategoria.ValueMember = "Id";
+            // 
+            // lblNome
+            // 
+            this.lblNome.Location = new System.Drawing.Point(155, 38);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(446, 31);
+            this.lblNome.TabIndex = 6;
             // 
             // FormCadastroProduto
             // 

@@ -116,16 +116,18 @@ namespace HandsOfWork.Views
             // 
             // nome
             // 
+            this.nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nome.HeaderText = "Nome";
             this.nome.MinimumWidth = 8;
             this.nome.Name = "nome";
-            this.nome.Width = 150;
+            this.nome.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // categoria
             // 
             this.categoria.HeaderText = "Categoria";
             this.categoria.MinimumWidth = 8;
             this.categoria.Name = "categoria";
+            this.categoria.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.categoria.Width = 150;
             // 
             // FormProduto
@@ -169,8 +171,8 @@ namespace HandsOfWork.Views
 
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
