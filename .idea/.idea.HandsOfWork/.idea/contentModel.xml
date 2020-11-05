@@ -7,6 +7,7 @@
     <e p="C:\Users\matheus.brenner\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
     <e p="C:\Users\matheus.brenner\RiderProjects\HandsOfWork" t="IncludeFlat">
       <e p="HandsOfWork" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Entities" t="Include">
           <e p="Categoria.cs" t="Include" />
@@ -18,13 +19,7 @@
           <e p="SimpleId.cs" t="Include" />
         </e>
         <e p="HandsOfWork.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="HandsOfWork.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Services" t="Include">
           <e p="ProdutoService.cs" t="Include" />
