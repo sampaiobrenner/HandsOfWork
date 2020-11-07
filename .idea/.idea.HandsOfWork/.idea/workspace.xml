@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76fb1bb3-65a3-4906-bc6c-b6795030fed5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagramas/DER.drawio" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,28 +14,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <changedPaths>
-      <option value="$PROJECT_DIR$/HandsOfWork/FormCadastroProduto.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/FormCadastroCliente.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/FormPrincipal.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Views/FormPrincipal.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/SimpleId.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/Categoria.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/Produto.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/Cliente.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/PessoaJuridica.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/PessoaFisica.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/Pessoa.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Entities/ModoOperacao.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Views/FormCadastroProduto.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Program.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Views/FormProduto.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Views/FormCliente.cs" />
-      <option value="$PROJECT_DIR$/HandsOfWork/Views/FormCadastroCliente.cs" />
-    </changedPaths>
   </component>
   <component name="ProjectId" id="1jpjF28LxYzH8lib6q41gZL5bai" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,6 +60,7 @@
       <workItem from="1604507836843" duration="1339000" />
       <workItem from="1604509266850" duration="1190000" />
       <workItem from="1604610736173" duration="1231000" />
+      <workItem from="1604761428427" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1604510357653</created>
@@ -129,6 +108,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -142,7 +122,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs</url>
           <line>7</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="7" containingFunctionPresentation="method 'Cadastrar'">
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="7">
             <startOffsets>
               <option value="155" />
             </startOffsets>
@@ -155,7 +135,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs</url>
           <line>12</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="12" containingFunctionPresentation="method 'Editar'">
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="12">
             <startOffsets>
               <option value="330" />
             </startOffsets>
@@ -168,7 +148,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs</url>
           <line>16</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="16" containingFunctionPresentation="method 'Excluir'">
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="16">
             <startOffsets>
               <option value="389" />
             </startOffsets>
@@ -181,7 +161,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Views/FormCadastroProduto.cs</url>
           <line>18</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Views\FormCadastroProduto.cs" initialLine="15" containingFunctionPresentation="method 'btnSalvar_Click'">
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Views\FormCadastroProduto.cs" initialLine="15">
             <startOffsets>
               <option value="474" />
             </startOffsets>

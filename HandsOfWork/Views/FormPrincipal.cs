@@ -21,5 +21,11 @@ namespace HandsOfWork.Views
             var formProduto = new FormProduto();
             formProduto.ShowDialog();
         }
+
+        private void btnMovimentacoes_Click(object sender, EventArgs e)
+        {
+            var formMovimentacoes = new FormMovimentacoes();
+            formMovimentacoes.ShowDialog();
+        }
     }
 }
