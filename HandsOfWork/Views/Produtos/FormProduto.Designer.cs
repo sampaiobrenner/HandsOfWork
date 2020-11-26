@@ -66,6 +66,7 @@ namespace HandsOfWork.Views.Produtos
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
@@ -76,6 +77,7 @@ namespace HandsOfWork.Views.Produtos
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // panel1
             // 
@@ -130,6 +132,7 @@ namespace HandsOfWork.Views.Produtos
             this.Id.HeaderText = "Id";
             this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             this.Id.Width = 125;
             // 
             // Descricao
@@ -138,29 +141,37 @@ namespace HandsOfWork.Views.Produtos
             this.Descricao.HeaderText = "Descricao";
             this.Descricao.MinimumWidth = 6;
             this.Descricao.Name = "Descricao";
+            this.Descricao.ReadOnly = true;
             this.Descricao.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Descricao.Width = 125;
+            // 
+            // dgvProdutos
+            // 
+            this.dgvProdutos.AllowUserToAddRows = false;
+            this.dgvProdutos.AllowUserToDeleteRows = false;
+            this.dgvProdutos.AllowUserToResizeColumns = false;
+            this.dgvProdutos.AllowUserToResizeRows = false;
+            this.dgvProdutos.ColumnHeadersHeight = 29;
+            this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Descricao});
+            this.dgvProdutos.Location = new System.Drawing.Point(16, 46);
+            this.dgvProdutos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvProdutos.MultiSelect = false;
+            this.dgvProdutos.Name = "dgvProdutos";
+            this.dgvProdutos.ReadOnly = true;
+            this.dgvProdutos.RowHeadersWidth = 62;
+            this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProdutos.Size = new System.Drawing.Size(956, 451);
+            this.dgvProdutos.TabIndex = 5;
+            this.dgvProdutos.Text = "dataGridView1";
             // 
             // FormProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 662);
-            // 
-            // dgvProdutos
-            // 
-            this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Descricao});
-            this.dgvProdutos.Enabled = false;
-            this.dgvProdutos.Location = new System.Drawing.Point(16, 46);
-            this.dgvProdutos.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvProdutos.Name = "dgvProdutos";
-            this.dgvProdutos.RowHeadersWidth = 62;
-            this.dgvProdutos.Size = new System.Drawing.Size(956, 451);
-            this.dgvProdutos.TabIndex = 5;
-            this.dgvProdutos.Text = "dataGridView1";
             this.Controls.Add(this.dgvProdutos);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

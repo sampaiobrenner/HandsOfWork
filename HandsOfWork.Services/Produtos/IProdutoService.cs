@@ -7,6 +7,12 @@ namespace HandsOfWork.Services.Produtos
     {
         void Cadastrar(Produto produto);
 
+        void Editar(Produto produto);
+
+        void Excluir(int idProduto);
+
         List<Produto> Listar();
+
+        Produto ObterPorId(int id);
     }
 }

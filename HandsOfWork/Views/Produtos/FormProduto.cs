@@ -18,6 +18,27 @@ namespace HandsOfWork.Views.Produtos
             PreencherGrid();
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvProdutos.SelectedRows.Count <= 0) return;
+
+            var formCadastroProduto = _serviceProvider.GetService<FormCadastroProduto>();
+            formCadastroProduto.IdProduto = int.Parse(dgvProdutos.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
+            formCadastroProduto.ShowDialog();
+
+            PreencherGrid();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (dgvProdutos.SelectedRows.Count <= 0) return;
+
+            var idProduto = int.Parse(dgvProdutos.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
+            _produtoService.Excluir(idProduto);
+
+            PreencherGrid();
+        }
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();
@@ -27,12 +48,16 @@ namespace HandsOfWork.Views.Produtos
         {
             var formCadastroProduto = _serviceProvider.GetService<FormCadastroProduto>();
             formCadastroProduto?.ShowDialog();
+
+            PreencherGrid();
         }
 
         private void PreencherGrid()
         {
             dgvProdutos.AutoGenerateColumns = false;
+            dgvProdutos.DataSource = "";
             dgvProdutos.DataSource = _produtoService.Listar();
+            dgvProdutos.Refresh();
         }
     }
 }

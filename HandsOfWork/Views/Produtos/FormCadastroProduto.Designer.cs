@@ -48,40 +48,40 @@ namespace HandsOfWork.Views.Produtos
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.btnFechar);
-            this.panel1.Location = new System.Drawing.Point(58, 321);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.panel1.Location = new System.Drawing.Point(46, 257);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1195, 131);
-            this.panel1.TabIndex = 4;
+            this.panel1.Size = new System.Drawing.Size(956, 105);
+            this.panel1.TabIndex = 1;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(925, 27);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnSalvar.Location = new System.Drawing.Point(740, 22);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(228, 83);
-            this.btnSalvar.TabIndex = 2;
+            this.btnSalvar.Size = new System.Drawing.Size(182, 66);
+            this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(45, 27);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnFechar.Location = new System.Drawing.Point(36, 22);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(228, 83);
-            this.btnFechar.TabIndex = 0;
+            this.btnFechar.Size = new System.Drawing.Size(182, 66);
+            this.btnFechar.TabIndex = 2;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(27, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(22, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 44);
+            this.label1.Size = new System.Drawing.Size(94, 35);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome:";
             // 
@@ -92,18 +92,18 @@ namespace HandsOfWork.Views.Produtos
             this.panel2.Controls.Add(this.cboCategoria);
             this.panel2.Controls.Add(this.lblNome);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(58, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.panel2.Location = new System.Drawing.Point(46, 38);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1195, 233);
-            this.panel2.TabIndex = 6;
+            this.panel2.Size = new System.Drawing.Size(956, 187);
+            this.panel2.TabIndex = 0;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(27, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Location = new System.Drawing.Point(22, 70);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 44);
+            this.label2.Size = new System.Drawing.Size(96, 35);
             this.label2.TabIndex = 5;
             this.label2.Text = "Categoria:";
             // 
@@ -111,31 +111,33 @@ namespace HandsOfWork.Views.Produtos
             // 
             this.cboCategoria.DisplayMember = "Descricao";
             this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(155, 91);
+            this.cboCategoria.Location = new System.Drawing.Point(124, 73);
+            this.cboCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(446, 33);
-            this.cboCategoria.TabIndex = 7;
+            this.cboCategoria.Size = new System.Drawing.Size(358, 28);
+            this.cboCategoria.TabIndex = 2;
             this.cboCategoria.ValueMember = "Id";
             // 
             // lblNome
             // 
-            this.lblNome.Location = new System.Drawing.Point(155, 38);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.lblNome.Location = new System.Drawing.Point(124, 30);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(446, 31);
-            this.lblNome.TabIndex = 6;
+            this.lblNome.Size = new System.Drawing.Size(358, 27);
+            this.lblNome.TabIndex = 1;
             // 
             // FormCadastroProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 485);
+            this.ClientSize = new System.Drawing.Size(1066, 388);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de produtos";
+            this.Load += new System.EventHandler(this.FormCadastroProduto_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

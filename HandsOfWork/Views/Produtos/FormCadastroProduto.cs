@@ -17,8 +17,9 @@ namespace HandsOfWork.Views.Produtos
             _produtoService = produtoService;
             _categoriaService = categoriaService;
             InitializeComponent();
-            CarregarCategorias();
         }
+
+        public int? IdProduto { get; set; }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -35,6 +36,7 @@ namespace HandsOfWork.Views.Produtos
 
             var produto = new Produto
             {
+                Id = IdProduto ?? 0,
                 Descricao = lblNome.Text,
                 Categoria = new Categoria
                 {
@@ -43,13 +45,31 @@ namespace HandsOfWork.Views.Produtos
                 }
             };
 
-            _produtoService.Cadastrar(produto);
+            if (IdProduto is null)
+                _produtoService.Cadastrar(produto);
+            else
+                _produtoService.Editar(produto);
+
             Close();
         }
 
         private void CarregarCategorias()
         {
             cboCategoria.DataSource = _categoriaService.ListarCategorias();
+        }
+
+        private void CarregarProduto()
+        {
+            if (IdProduto is null) return;
+
+            var produto = _produtoService.ObterPorId(IdProduto.Value);
+            lblNome.Text = produto.Descricao;
+        }
+
+        private void FormCadastroProduto_Load(object sender, EventArgs e)
+        {
+            CarregarCategorias();
+            CarregarProduto();
         }
     }
 }

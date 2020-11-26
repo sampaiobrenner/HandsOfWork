@@ -20,15 +20,13 @@ namespace HandsOfWork.Services.Produtos
             _produtoRepository.Cadastrar(produto);
         }
 
-        public void Editar(Produto produto)
-        {
-        }
+        public void Editar(Produto produto) => _produtoRepository.Editar(produto);
 
-        public void Excluir()
-        {
-        }
+        public void Excluir(int idProduto) => _produtoRepository.Excluir(idProduto);
 
         public List<Produto> Listar() => _produtoRepository.Listar();
+
+        public Produto ObterPorId(int id) => _produtoRepository.ObterPorId(id);
 
         private void GerarIdProduto(Produto produto)
         {

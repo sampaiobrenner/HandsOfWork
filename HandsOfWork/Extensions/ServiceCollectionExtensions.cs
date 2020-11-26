@@ -25,7 +25,7 @@ namespace HandsOfWork.Extensions
                 .AddScoped<IProdutoRepository, ProdutoRepository>();
 
         public static IServiceCollection AddServices(this IServiceCollection services)
-                    => services
+            => services
                 .AddScoped<IProdutoService, ProdutoService>()
                 .AddScoped<ICategoriaService, CategoriaService>();
     }
