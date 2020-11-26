@@ -7,19 +7,27 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Update="Views\FormCadastroCliente.cs">
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HandsOfWork.Services\HandsOfWork.Services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\Clientes\FormCadastroCliente.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="Views\FormCadastroProduto.cs">
+      <Compile Update="Views\Produtos\FormCadastroProduto.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="Views\FormPrincipal.cs">
+      <Compile Update="Views\MenuPrincipal\FormPrincipal.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="Views\FormCliente.cs">
+      <Compile Update="Views\Clientes\FormCliente.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="Views\FormProduto.cs">
+      <Compile Update="Views\Produtos\FormProduto.cs">
         <SubType>Form</SubType>
       </Compile>
     </ItemGroup>
