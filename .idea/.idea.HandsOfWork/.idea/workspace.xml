@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76fb1bb3-65a3-4906-bc6c-b6795030fed5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Diagramas/DER.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOfWork/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandsOfWork/HandsOfWork.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOfWork/HandsOfWork.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandsOfWork/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOfWork/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +63,7 @@
       <workItem from="1604509266850" duration="1190000" />
       <workItem from="1604610736173" duration="1231000" />
       <workItem from="1604761428427" duration="10000" />
+      <workItem from="1606346148218" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1604510357653</created>
@@ -122,53 +125,25 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs</url>
           <line>7</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="7">
-            <startOffsets>
-              <option value="155" />
-            </startOffsets>
-            <endOffsets>
-              <option value="156" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="7" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs</url>
           <line>12</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="12">
-            <startOffsets>
-              <option value="330" />
-            </startOffsets>
-            <endOffsets>
-              <option value="331" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="12" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Services/ProdutoService.cs</url>
           <line>16</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="16">
-            <startOffsets>
-              <option value="389" />
-            </startOffsets>
-            <endOffsets>
-              <option value="390" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Services\ProdutoService.cs" initialLine="16" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HandsOfWork/Views/FormCadastroProduto.cs</url>
           <line>18</line>
-          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Views\FormCadastroProduto.cs" initialLine="15">
-            <startOffsets>
-              <option value="474" />
-            </startOffsets>
-            <endOffsets>
-              <option value="475" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\matheus.brenner\RiderProjects\HandsOfWork\HandsOfWork\Views\FormCadastroProduto.cs" initialLine="15" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

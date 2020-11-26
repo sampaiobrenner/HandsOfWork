@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HandsOfWork.Entities\HandsOfWork.Entities.csproj" />
+    <ProjectReference Include="..\HandsOfWork.Repositories\HandsOfWork.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
