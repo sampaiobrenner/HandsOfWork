@@ -8,7 +8,10 @@ namespace HandsOfWork.Repositories.Abstractions
     public abstract class CrudRepository<TEntity> : ICrudRepository<TEntity>
         where TEntity : BaseEntity
     {
-        protected CrudRepository() => Itens = new List<TEntity>();
+        protected CrudRepository()
+        {
+            Itens = new List<TEntity>();
+        }
 
         public List<TEntity> Itens { get; }
 

@@ -10,7 +10,10 @@ namespace HandsOfWork.Services.Abstractions
     {
         private readonly ICrudRepository<TEntity> _crudRepository;
 
-        protected CrudService(ICrudRepository<TEntity> crudRepository) => _crudRepository = crudRepository;
+        protected CrudService(ICrudRepository<TEntity> crudRepository)
+        {
+            _crudRepository = crudRepository;
+        }
 
         public void Cadastrar(TEntity entity) => _crudRepository.Cadastrar(entity);
 
