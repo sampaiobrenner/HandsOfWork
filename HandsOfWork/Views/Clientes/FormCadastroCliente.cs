@@ -43,6 +43,7 @@ namespace HandsOfWork.Views.Clientes
             var pessoa = _pessoaFisicaService.ObterPorId(IdPessoa.Value);
             lblNome.Text = pessoa.Nome;
             lblEmail.Text = pessoa.Email;
+            lblCpfCnpj.Text = pessoa.Cpf;
         }
 
         private void FormCadastroCliente_Load(object sender, EventArgs e)
