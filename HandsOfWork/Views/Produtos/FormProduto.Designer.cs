@@ -48,10 +48,10 @@ namespace HandsOfWork.Views.Produtos
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(324, 22);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnNovo.Location = new System.Drawing.Point(284, 16);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(182, 66);
+            this.btnNovo.Size = new System.Drawing.Size(159, 50);
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@ namespace HandsOfWork.Views.Produtos
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(534, 22);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEditar.Location = new System.Drawing.Point(467, 16);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(182, 66);
+            this.btnEditar.Size = new System.Drawing.Size(159, 50);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@ namespace HandsOfWork.Views.Produtos
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(740, 22);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExcluir.Location = new System.Drawing.Point(648, 16);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(182, 66);
+            this.btnExcluir.Size = new System.Drawing.Size(159, 50);
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -86,18 +86,18 @@ namespace HandsOfWork.Views.Produtos
             this.panel1.Controls.Add(this.btnExcluir);
             this.panel1.Controls.Add(this.btnNovo);
             this.panel1.Controls.Add(this.btnEditar);
-            this.panel1.Location = new System.Drawing.Point(16, 537);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(14, 403);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(956, 105);
+            this.panel1.Size = new System.Drawing.Size(837, 79);
             this.panel1.TabIndex = 3;
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(26, 22);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFechar.Location = new System.Drawing.Point(23, 16);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(182, 66);
+            this.btnFechar.Size = new System.Drawing.Size(159, 50);
             this.btnFechar.TabIndex = 3;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -134,6 +134,7 @@ namespace HandsOfWork.Views.Produtos
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
             this.Id.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Id.Visible = false;
             this.Id.Width = 300;
             // 
             // Descricao
@@ -148,9 +149,9 @@ namespace HandsOfWork.Views.Produtos
             // 
             // FormProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 662);
+            this.ClientSize = new System.Drawing.Size(870, 496);
             // 
             // dgvProdutos
             // 
@@ -163,19 +164,19 @@ namespace HandsOfWork.Views.Produtos
             this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Descricao});
-            this.dgvProdutos.Location = new System.Drawing.Point(16, 46);
+            this.dgvProdutos.Location = new System.Drawing.Point(14, 34);
             this.dgvProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProdutos.MultiSelect = false;
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
             this.dgvProdutos.RowHeadersWidth = 62;
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProdutos.Size = new System.Drawing.Size(956, 451);
+            this.dgvProdutos.Size = new System.Drawing.Size(836, 338);
             this.dgvProdutos.TabIndex = 5;
             this.dgvProdutos.Text = "dataGridView1";
             this.Controls.Add(this.dgvProdutos);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de produtos";

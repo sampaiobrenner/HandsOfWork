@@ -27,6 +27,14 @@ namespace HandsOfWork.Views.Clientes
             if (string.IsNullOrEmpty(lblNome.Text))
             {
                 MessageBox.Show("O campo nome deve ser informado.");
+                lblNome.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(lblEmail.Text))
+            {
+                MessageBox.Show("O campo email deve ser informado.");
+                lblEmail.Focus();
                 return;
             }
 
@@ -43,6 +51,20 @@ namespace HandsOfWork.Views.Clientes
                 _pessoaService.Editar(pessoa);
 
             Close();
+        }
+
+        private void CarregarCliente()
+        {
+            if (IdPessoa is null) return;
+
+            var pessoa = _pessoaService.ObterPorId(IdPessoa.Value);
+            lblNome.Text = pessoa.Nome;
+            lblEmail.Text = pessoa.Email;
+        }
+
+        private void FormCadastroCliente_Load(object sender, EventArgs e)
+        {
+            CarregarCliente();
         }
     }
 }
