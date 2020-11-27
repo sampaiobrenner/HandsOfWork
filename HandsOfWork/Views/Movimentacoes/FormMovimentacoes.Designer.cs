@@ -33,12 +33,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cboProduto = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cboCliente = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.nomeProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +66,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(648, 16);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
@@ -85,6 +89,19 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeProduto});
+            this.dataGridView1.Location = new System.Drawing.Point(19, 94);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(800, 200);
+            this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.Text = "dataGridView1";
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.cboProduto);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.label3);
@@ -108,7 +125,8 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(701, 46);
+            this.button4.Enabled = false;
+            this.button4.Location = new System.Drawing.Point(701, 50);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(118, 26);
@@ -137,7 +155,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(569, 46);
+            this.button3.Enabled = false;
+            this.button3.Location = new System.Drawing.Point(569, 50);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 26);
@@ -156,6 +175,14 @@
             this.panel2.Size = new System.Drawing.Size(837, 79);
             this.panel2.TabIndex = 4;
             // 
+            // nomeProduto
+            // 
+            this.nomeProduto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nomeProduto.HeaderText = "Nome do produto";
+            this.nomeProduto.Name = "nomeProduto";
+            this.nomeProduto.ReadOnly = true;
+            this.nomeProduto.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // FormMovimentacoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -167,6 +194,7 @@
             this.Name = "FormMovimentacoes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movimentações";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -186,5 +214,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cboProduto;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeProduto;
     }
 }

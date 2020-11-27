@@ -150,6 +150,7 @@ namespace HandsOfWork.Views.Produtos
             // 
             // Categoria
             // 
+            this.Categoria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Categoria.DataPropertyName = "DescricaoCategoria";
             this.Categoria.HeaderText = "Categoria";
             this.Categoria.Name = "Categoria";

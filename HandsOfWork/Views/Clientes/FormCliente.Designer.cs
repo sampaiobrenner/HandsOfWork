@@ -41,6 +41,7 @@ namespace HandsOfWork.Views.Clientes
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
@@ -54,7 +55,7 @@ namespace HandsOfWork.Views.Clientes
             this.panel1.Controls.Add(this.btnNovo);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Location = new System.Drawing.Point(46, 412);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 79);
             this.panel1.TabIndex = 4;
@@ -62,7 +63,7 @@ namespace HandsOfWork.Views.Clientes
             // btnFechar
             // 
             this.btnFechar.Location = new System.Drawing.Point(23, 16);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(159, 50);
             this.btnFechar.TabIndex = 3;
@@ -73,7 +74,7 @@ namespace HandsOfWork.Views.Clientes
             // btnExcluir
             // 
             this.btnExcluir.Location = new System.Drawing.Point(648, 16);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(159, 50);
             this.btnExcluir.TabIndex = 2;
@@ -84,7 +85,7 @@ namespace HandsOfWork.Views.Clientes
             // btnNovo
             // 
             this.btnNovo.Location = new System.Drawing.Point(284, 16);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(159, 50);
             this.btnNovo.TabIndex = 0;
@@ -95,7 +96,7 @@ namespace HandsOfWork.Views.Clientes
             // btnEditar
             // 
             this.btnEditar.Location = new System.Drawing.Point(467, 16);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(159, 50);
             this.btnEditar.TabIndex = 1;
@@ -154,6 +155,15 @@ namespace HandsOfWork.Views.Clientes
             this.Email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Email.Width = 250;
             // 
+            // Cpf
+            // 
+            this.Cpf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cpf.DataPropertyName = "Cpf";
+            this.Cpf.HeaderText = "Cpf";
+            this.Cpf.Name = "Cpf";
+            this.Cpf.ReadOnly = true;
+            this.Cpf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -171,7 +181,8 @@ namespace HandsOfWork.Views.Clientes
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Nome,
-            this.Email});
+            this.Email,
+            this.Cpf});
             this.dgvClientes.Location = new System.Drawing.Point(46, 50);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvClientes.MultiSelect = false;
@@ -184,7 +195,7 @@ namespace HandsOfWork.Views.Clientes
             this.dgvClientes.Text = "dataGridView1";
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de clientes";
@@ -208,5 +219,6 @@ namespace HandsOfWork.Views.Clientes
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cpf;
     }
 }

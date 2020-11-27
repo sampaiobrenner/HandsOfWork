@@ -124,11 +124,13 @@ namespace HandsOfWork.Views.Clientes
             // chkPessoaFisica
             // 
             this.chkPessoaFisica.AutoSize = true;
+            this.chkPessoaFisica.Checked = true;
             this.chkPessoaFisica.Location = new System.Drawing.Point(620, 25);
             this.chkPessoaFisica.Margin = new System.Windows.Forms.Padding(2);
             this.chkPessoaFisica.Name = "chkPessoaFisica";
             this.chkPessoaFisica.Size = new System.Drawing.Size(54, 19);
             this.chkPessoaFisica.TabIndex = 7;
+            this.chkPessoaFisica.TabStop = true;
             this.chkPessoaFisica.Text = "Fisica";
             this.chkPessoaFisica.UseVisualStyleBackColor = true;
             // 
