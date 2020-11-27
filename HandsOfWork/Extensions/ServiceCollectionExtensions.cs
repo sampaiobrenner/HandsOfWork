@@ -1,4 +1,6 @@
-﻿using HandsOfWork.Repositories.Produtos;
+﻿using HandsOfWork.Entities.Produtos;
+using HandsOfWork.Repositories.Abstractions;
+using HandsOfWork.Repositories.Produtos;
 using HandsOfWork.Services.Categorias;
 using HandsOfWork.Services.Produtos;
 using HandsOfWork.Views.Clientes;
@@ -22,7 +24,7 @@ namespace HandsOfWork.Extensions
 
         public static IServiceCollection AddRepositories(this IServiceCollection services)
             => services
-                .AddScoped<IProdutoRepository, ProdutoRepository>();
+                .AddScoped<ICrudRepository<Produto>, ProdutoRepository>();
 
         public static IServiceCollection AddServices(this IServiceCollection services)
             => services

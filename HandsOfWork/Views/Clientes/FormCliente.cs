@@ -13,6 +13,14 @@ namespace HandsOfWork.Views.Clientes
             InitializeComponent();
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+        }
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();

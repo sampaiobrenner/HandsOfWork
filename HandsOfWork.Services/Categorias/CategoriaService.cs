@@ -1,4 +1,5 @@
 ﻿using HandsOfWork.Entities.Categorias;
+using System;
 using System.Collections.Generic;
 
 namespace HandsOfWork.Services.Categorias
@@ -9,13 +10,13 @@ namespace HandsOfWork.Services.Categorias
         {
             var categoria1 = new Categoria()
             {
-                Id = 1,
+                Id = Guid.NewGuid(),
                 Descricao = "Teste 1"
             };
 
             var categoria2 = new Categoria()
             {
-                Id = 2,
+                Id = Guid.NewGuid(),
                 Descricao = "Teste 2"
             };
 

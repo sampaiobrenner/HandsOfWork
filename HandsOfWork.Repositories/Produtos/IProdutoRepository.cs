@@ -1,18 +1,9 @@
 ﻿using HandsOfWork.Entities.Produtos;
-using System.Collections.Generic;
+using HandsOfWork.Repositories.Abstractions;
 
 namespace HandsOfWork.Repositories.Produtos
 {
-    public interface IProdutoRepository
+    public interface IProdutoRepository : ICrudRepository<Produto>
     {
-        void Cadastrar(Produto produto);
-
-        void Editar(Produto produto);
-
-        void Excluir(int idProduto);
-
-        List<Produto> Listar();
-
-        Produto ObterPorId(int id);
     }
 }

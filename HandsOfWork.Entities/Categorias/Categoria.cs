@@ -2,7 +2,7 @@
 
 namespace HandsOfWork.Entities.Categorias
 {
-    public class Categoria : SimpleId<int>
+    public class Categoria : BaseEntity
     {
         public string Descricao { get; set; }
     }

@@ -23,7 +23,7 @@ namespace HandsOfWork.Views.Produtos
             if (dgvProdutos.SelectedRows.Count <= 0) return;
 
             var formCadastroProduto = _serviceProvider.GetService<FormCadastroProduto>();
-            formCadastroProduto.IdProduto = int.Parse(dgvProdutos.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
+            formCadastroProduto.IdProduto = Guid.Parse(dgvProdutos.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
             formCadastroProduto.ShowDialog();
 
             PreencherGrid();
@@ -33,7 +33,7 @@ namespace HandsOfWork.Views.Produtos
         {
             if (dgvProdutos.SelectedRows.Count <= 0) return;
 
-            var idProduto = int.Parse(dgvProdutos.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
+            var idProduto = Guid.Parse(dgvProdutos.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
             _produtoService.Excluir(idProduto);
 
             PreencherGrid();

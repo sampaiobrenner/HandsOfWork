@@ -1,37 +1,13 @@
 ﻿using HandsOfWork.Entities.Produtos;
-using HandsOfWork.Repositories.Produtos;
-using System.Collections.Generic;
+using HandsOfWork.Repositories.Abstractions;
+using HandsOfWork.Services.Abstractions;
 
 namespace HandsOfWork.Services.Produtos
 {
-    public class ProdutoService : IProdutoService
+    public class ProdutoService : CrudService<Produto>, IProdutoService
     {
-        private static int _idProduto = 1;
-        private readonly IProdutoRepository _produtoRepository;
-
-        public ProdutoService(IProdutoRepository produtoRepository)
+        public ProdutoService(ICrudRepository<Produto> crudRepository) : base(crudRepository)
         {
-            _produtoRepository = produtoRepository;
-        }
-
-        public void Cadastrar(Produto produto)
-        {
-            GerarIdProduto(produto);
-            _produtoRepository.Cadastrar(produto);
-        }
-
-        public void Editar(Produto produto) => _produtoRepository.Editar(produto);
-
-        public void Excluir(int idProduto) => _produtoRepository.Excluir(idProduto);
-
-        public List<Produto> Listar() => _produtoRepository.Listar();
-
-        public Produto ObterPorId(int id) => _produtoRepository.ObterPorId(id);
-
-        private void GerarIdProduto(Produto produto)
-        {
-            produto.Id = _idProduto;
-            _idProduto++;
         }
     }
 }

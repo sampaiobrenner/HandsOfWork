@@ -19,7 +19,7 @@ namespace HandsOfWork.Views.Produtos
             InitializeComponent();
         }
 
-        public int? IdProduto { get; set; }
+        public Guid? IdProduto { get; set; }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -36,11 +36,11 @@ namespace HandsOfWork.Views.Produtos
 
             var produto = new Produto
             {
-                Id = IdProduto ?? 0,
+                Id = IdProduto ?? Guid.Empty,
                 Descricao = lblNome.Text,
                 Categoria = new Categoria
                 {
-                    Id = cboCategoria.SelectedIndex,
+                    Id = Guid.Parse(cboCategoria.SelectedValue.ToString() ?? string.Empty),
                     Descricao = cboCategoria.Text
                 }
             };

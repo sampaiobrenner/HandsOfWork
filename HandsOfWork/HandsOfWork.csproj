@@ -15,21 +15,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Views\Clientes\FormCadastroCliente.cs">
-        <SubType>Form</SubType>
-      </Compile>
-      <Compile Update="Views\Produtos\FormCadastroProduto.cs">
-        <SubType>Form</SubType>
-      </Compile>
-      <Compile Update="Views\MenuPrincipal\FormPrincipal.cs">
-        <SubType>Form</SubType>
-      </Compile>
-      <Compile Update="Views\Clientes\FormCliente.cs">
-        <SubType>Form</SubType>
-      </Compile>
-      <Compile Update="Views\Produtos\FormProduto.cs">
-        <SubType>Form</SubType>
-      </Compile>
+      <Compile Update="Views\Clientes\FormCadastroCliente.cs" />
+      <Compile Update="Views\Produtos\FormCadastroProduto.cs" />
+      <Compile Update="Views\MenuPrincipal\FormPrincipal.cs" />
+      <Compile Update="Views\Clientes\FormCliente.cs" />
+      <Compile Update="Views\Produtos\FormProduto.cs" />
     </ItemGroup>
 
 </Project>

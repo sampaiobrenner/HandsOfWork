@@ -3,9 +3,9 @@ using HandsOfWork.Entities.Categorias;
 
 namespace HandsOfWork.Entities.Produtos
 {
-    public class Produto : SimpleId<int>
+    public class Produto : BaseEntity
     {
-        public string Descricao { get; set; }
         public Categoria Categoria { get; set; }
+        public string Descricao { get; set; }
     }
 }

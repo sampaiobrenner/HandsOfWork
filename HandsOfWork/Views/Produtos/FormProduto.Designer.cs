@@ -133,7 +133,8 @@ namespace HandsOfWork.Views.Produtos
             this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
-            this.Id.Width = 125;
+            this.Id.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Id.Width = 300;
             // 
             // Descricao
             // 
@@ -143,7 +144,13 @@ namespace HandsOfWork.Views.Produtos
             this.Descricao.Name = "Descricao";
             this.Descricao.ReadOnly = true;
             this.Descricao.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Descricao.Width = 125;
+            this.Descricao.Width = 500;
+            // 
+            // FormProduto
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(994, 662);
             // 
             // dgvProdutos
             // 
@@ -166,12 +173,6 @@ namespace HandsOfWork.Views.Produtos
             this.dgvProdutos.Size = new System.Drawing.Size(956, 451);
             this.dgvProdutos.TabIndex = 5;
             this.dgvProdutos.Text = "dataGridView1";
-            // 
-            // FormProduto
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 662);
             this.Controls.Add(this.dgvProdutos);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
