@@ -112,12 +112,12 @@ namespace HandsOfWork.Views.Clientes
             // chkPessoaJuridica
             // 
             this.chkPessoaJuridica.AutoSize = true;
+            this.chkPessoaJuridica.Enabled = false;
             this.chkPessoaJuridica.Location = new System.Drawing.Point(689, 25);
             this.chkPessoaJuridica.Margin = new System.Windows.Forms.Padding(2);
             this.chkPessoaJuridica.Name = "chkPessoaJuridica";
             this.chkPessoaJuridica.Size = new System.Drawing.Size(65, 19);
             this.chkPessoaJuridica.TabIndex = 7;
-            this.chkPessoaJuridica.TabStop = true;
             this.chkPessoaJuridica.Text = "Juridica";
             this.chkPessoaJuridica.UseVisualStyleBackColor = true;
             // 
@@ -129,7 +129,6 @@ namespace HandsOfWork.Views.Clientes
             this.chkPessoaFisica.Name = "chkPessoaFisica";
             this.chkPessoaFisica.Size = new System.Drawing.Size(54, 19);
             this.chkPessoaFisica.TabIndex = 7;
-            this.chkPessoaFisica.TabStop = true;
             this.chkPessoaFisica.Text = "Fisica";
             this.chkPessoaFisica.UseVisualStyleBackColor = true;
             // 
