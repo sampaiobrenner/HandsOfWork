@@ -4,9 +4,9 @@ using HandsOfWork.Services.Abstractions;
 
 namespace HandsOfWork.Services.Pessoas
 {
-    public class PessoaService : CrudService<Pessoa>, IPessoaService
+    public class PessoaFisicaService : CrudService<PessoaFisica>, IPessoaFisicaService
     {
-        public PessoaService(ICrudRepository<Pessoa> crudRepository) : base(crudRepository)
+        public PessoaFisicaService(ICrudRepository<PessoaFisica> crudRepository) : base(crudRepository)
         {
         }
     }

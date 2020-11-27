@@ -7,5 +7,6 @@ namespace HandsOfWork.Entities.Produtos
     {
         public Categoria Categoria { get; set; }
         public string Descricao { get; set; }
+        public string DescricaoCategoria => Categoria?.Descricao;
     }
 }

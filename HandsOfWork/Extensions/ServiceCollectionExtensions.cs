@@ -28,11 +28,13 @@ namespace HandsOfWork.Extensions
         public static IServiceCollection AddRepositories(this IServiceCollection services)
             => services
                 .AddScoped<ICrudRepository<Produto>, ProdutoRepository>()
-                .AddScoped<ICrudRepository<Pessoa>, PessoaRepository>();
+                .AddScoped<ICrudRepository<PessoaFisica>, PessoaFisicaRepository>()
+                .AddScoped<ICrudRepository<PessoaJuridica>, PessoaJuridicaRepository>();
 
         public static IServiceCollection AddServices(this IServiceCollection services)
             => services
-                .AddScoped<IPessoaService, PessoaService>()
+                .AddScoped<IPessoaFisicaService, PessoaFisicaService>()
+                .AddScoped<IPessoaJuridicaService, PessoaJuridicaService>()
                 .AddScoped<IProdutoService, ProdutoService>()
                 .AddScoped<ICategoriaService, CategoriaService>();
     }

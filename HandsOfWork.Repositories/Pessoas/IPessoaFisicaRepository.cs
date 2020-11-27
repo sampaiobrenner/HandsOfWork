@@ -3,7 +3,7 @@ using HandsOfWork.Repositories.Abstractions;
 
 namespace HandsOfWork.Repositories.Pessoas
 {
-    public interface IPessoaRepository : ICrudRepository<Pessoa>
+    public interface IPessoaFisicaRepository : ICrudRepository<PessoaFisica>
     {
     }
 }

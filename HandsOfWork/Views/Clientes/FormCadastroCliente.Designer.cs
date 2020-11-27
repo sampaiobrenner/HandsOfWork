@@ -35,10 +35,10 @@ namespace HandsOfWork.Views.Clientes
             this.lblEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblCpfCnpj = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.chkPessoaJuridica = new System.Windows.Forms.RadioButton();
+            this.chkPessoaFisica = new System.Windows.Forms.RadioButton();
             this.lblNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,14 +54,14 @@ namespace HandsOfWork.Views.Clientes
             this.panel2.Controls.Add(this.lblEmail);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.lblCpfCnpj);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.radioButton1);
+            this.panel2.Controls.Add(this.chkPessoaJuridica);
+            this.panel2.Controls.Add(this.chkPessoaFisica);
             this.panel2.Controls.Add(this.lblNome);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(49, 28);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(837, 141);
             this.panel2.TabIndex = 8;
@@ -69,7 +69,7 @@ namespace HandsOfWork.Views.Clientes
             // lblEmail
             // 
             this.lblEmail.Location = new System.Drawing.Point(136, 53);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(314, 23);
             this.lblEmail.TabIndex = 6;
@@ -92,13 +92,13 @@ namespace HandsOfWork.Views.Clientes
             this.label3.TabIndex = 5;
             this.label3.Text = "CPF / CNPJ";
             // 
-            // textBox1
+            // lblCpfCnpj
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 83);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 23);
-            this.textBox1.TabIndex = 6;
+            this.lblCpfCnpj.Location = new System.Drawing.Point(136, 83);
+            this.lblCpfCnpj.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCpfCnpj.Name = "lblCpfCnpj";
+            this.lblCpfCnpj.Size = new System.Drawing.Size(314, 23);
+            this.lblCpfCnpj.TabIndex = 6;
             // 
             // label2
             // 
@@ -109,34 +109,34 @@ namespace HandsOfWork.Views.Clientes
             this.label2.TabIndex = 5;
             this.label2.Text = "Tipo de cliente:";
             // 
-            // radioButton2
+            // chkPessoaJuridica
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(689, 25);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(65, 19);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Juridica";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.chkPessoaJuridica.AutoSize = true;
+            this.chkPessoaJuridica.Location = new System.Drawing.Point(689, 25);
+            this.chkPessoaJuridica.Margin = new System.Windows.Forms.Padding(2);
+            this.chkPessoaJuridica.Name = "chkPessoaJuridica";
+            this.chkPessoaJuridica.Size = new System.Drawing.Size(65, 19);
+            this.chkPessoaJuridica.TabIndex = 7;
+            this.chkPessoaJuridica.TabStop = true;
+            this.chkPessoaJuridica.Text = "Juridica";
+            this.chkPessoaJuridica.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // chkPessoaFisica
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(620, 25);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(54, 19);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Fisica";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.chkPessoaFisica.AutoSize = true;
+            this.chkPessoaFisica.Location = new System.Drawing.Point(620, 25);
+            this.chkPessoaFisica.Margin = new System.Windows.Forms.Padding(2);
+            this.chkPessoaFisica.Name = "chkPessoaFisica";
+            this.chkPessoaFisica.Size = new System.Drawing.Size(54, 19);
+            this.chkPessoaFisica.TabIndex = 7;
+            this.chkPessoaFisica.TabStop = true;
+            this.chkPessoaFisica.Text = "Fisica";
+            this.chkPessoaFisica.UseVisualStyleBackColor = true;
             // 
             // lblNome
             // 
             this.lblNome.Location = new System.Drawing.Point(136, 25);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(4);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(314, 23);
             this.lblNome.TabIndex = 6;
@@ -156,7 +156,7 @@ namespace HandsOfWork.Views.Clientes
             this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.btnFechar);
             this.panel1.Location = new System.Drawing.Point(49, 193);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 79);
             this.panel1.TabIndex = 7;
@@ -164,7 +164,7 @@ namespace HandsOfWork.Views.Clientes
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(648, 16);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(159, 50);
             this.btnSalvar.TabIndex = 2;
@@ -175,7 +175,7 @@ namespace HandsOfWork.Views.Clientes
             // btnFechar
             // 
             this.btnFechar.Location = new System.Drawing.Point(32, 16);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(159, 50);
             this.btnFechar.TabIndex = 0;
@@ -190,7 +190,7 @@ namespace HandsOfWork.Views.Clientes
             this.ClientSize = new System.Drawing.Size(933, 304);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de clientes";
@@ -214,9 +214,9 @@ namespace HandsOfWork.Views.Clientes
         private System.Windows.Forms.TextBox lblEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lblCpfCnpj;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton chkPessoaJuridica;
+        private System.Windows.Forms.RadioButton chkPessoaFisica;
     }
 }

@@ -7,20 +7,18 @@ namespace HandsOfWork.Services.Categorias
     public class CategoriaService : ICategoriaService
     {
         public List<Categoria> ListarCategorias()
-        {
-            var categoria1 = new Categoria()
-            {
-                Id = Guid.NewGuid(),
-                Descricao = "Teste 1"
-            };
-
-            var categoria2 = new Categoria()
-            {
-                Id = Guid.NewGuid(),
-                Descricao = "Teste 2"
-            };
-
-            return new List<Categoria> { categoria1, categoria2 };
-        }
+            => new List<Categoria>
+                {
+                    new Categoria
+                    {
+                        Id = Guid.Parse("e8838426-5d40-4aa1-9547-ffa50e527a55"),
+                        Descricao = "Eletrônicos"
+                    },
+                    new Categoria
+                    {
+                        Id = Guid.Parse("e0078873-2b9e-4ec3-907a-5b06e1bcd9f5"),
+                        Descricao = "Diversos"
+                    }
+                };
     }
 }

@@ -7,11 +7,13 @@ namespace HandsOfWork.Views.Clientes
 {
     public partial class FormCadastroCliente : Form
     {
-        private readonly IPessoaService _pessoaService;
+        private readonly IPessoaFisicaService _pessoaFisicaService;
+        private readonly IPessoaJuridicaService _pessoaJuridicaService;
 
-        public FormCadastroCliente(IPessoaService pessoaService)
+        public FormCadastroCliente(IPessoaFisicaService pessoaFisicaService, IPessoaJuridicaService pessoaJuridicaService)
         {
-            _pessoaService = pessoaService;
+            _pessoaFisicaService = pessoaFisicaService;
+            _pessoaJuridicaService = pessoaJuridicaService;
             InitializeComponent();
         }
 
@@ -24,31 +26,12 @@ namespace HandsOfWork.Views.Clientes
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(lblNome.Text))
-            {
-                MessageBox.Show("O campo nome deve ser informado.");
-                lblNome.Focus();
-                return;
-            }
+            if (ValidarDadosParaSalvarPessoa()) return;
 
-            if (string.IsNullOrEmpty(lblEmail.Text))
-            {
-                MessageBox.Show("O campo email deve ser informado.");
-                lblEmail.Focus();
-                return;
-            }
-
-            var pessoa = new Pessoa
-            {
-                Id = IdPessoa ?? Guid.Empty,
-                Nome = lblNome.Text,
-                Email = lblEmail.Text
-            };
-
-            if (IdPessoa is null)
-                _pessoaService.Cadastrar(pessoa);
+            if (chkPessoaFisica.Checked)
+                SalvarPessoaFisica();
             else
-                _pessoaService.Editar(pessoa);
+                SalvarPessoaJuridica();
 
             Close();
         }
@@ -57,7 +40,7 @@ namespace HandsOfWork.Views.Clientes
         {
             if (IdPessoa is null) return;
 
-            var pessoa = _pessoaService.ObterPorId(IdPessoa.Value);
+            var pessoa = _pessoaFisicaService.ObterPorId(IdPessoa.Value);
             lblNome.Text = pessoa.Nome;
             lblEmail.Text = pessoa.Email;
         }
@@ -65,6 +48,63 @@ namespace HandsOfWork.Views.Clientes
         private void FormCadastroCliente_Load(object sender, EventArgs e)
         {
             CarregarCliente();
+        }
+
+        private void SalvarPessoaFisica()
+        {
+            var pessoa = new PessoaFisica()
+            {
+                Id = IdPessoa ?? Guid.Empty,
+                Nome = lblNome.Text,
+                Email = lblEmail.Text,
+                Cpf = lblCpfCnpj.Text
+            };
+
+            if (IdPessoa is null)
+                _pessoaFisicaService.Cadastrar(pessoa);
+            else
+                _pessoaFisicaService.Editar(pessoa);
+        }
+
+        private void SalvarPessoaJuridica()
+        {
+            var pessoa = new PessoaJuridica()
+            {
+                Id = IdPessoa ?? Guid.Empty,
+                Nome = lblNome.Text,
+                Email = lblEmail.Text,
+                Cnpj = lblCpfCnpj.Text
+            };
+
+            if (IdPessoa is null)
+                _pessoaJuridicaService.Cadastrar(pessoa);
+            else
+                _pessoaJuridicaService.Editar(pessoa);
+        }
+
+        private bool ValidarDadosParaSalvarPessoa()
+        {
+            if (string.IsNullOrEmpty(lblNome.Text))
+            {
+                MessageBox.Show("O campo nome deve ser informado.");
+                lblNome.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrEmpty(lblEmail.Text))
+            {
+                MessageBox.Show("O campo email deve ser informado.");
+                lblEmail.Focus();
+                return true;
+            }
+
+            if (!chkPessoaFisica.Checked && !chkPessoaJuridica.Checked)
+            {
+                MessageBox.Show("O tipo da pessoa deve ser informado.");
+                return true;
+            }
+
+            return false;
         }
     }
 }

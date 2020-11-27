@@ -64,6 +64,7 @@ namespace HandsOfWork.Views.Produtos
 
             var produto = _produtoService.ObterPorId(IdProduto.Value);
             lblNome.Text = produto.Descricao;
+            cboCategoria.SelectedValue = produto.Categoria.Id;
         }
 
         private void FormCadastroProduto_Load(object sender, EventArgs e)

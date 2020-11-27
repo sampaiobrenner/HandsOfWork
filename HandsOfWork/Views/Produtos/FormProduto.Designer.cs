@@ -41,6 +41,7 @@ namespace HandsOfWork.Views.Produtos
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
@@ -49,7 +50,7 @@ namespace HandsOfWork.Views.Produtos
             // btnNovo
             // 
             this.btnNovo.Location = new System.Drawing.Point(284, 16);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(159, 50);
             this.btnNovo.TabIndex = 0;
@@ -60,7 +61,7 @@ namespace HandsOfWork.Views.Produtos
             // btnEditar
             // 
             this.btnEditar.Location = new System.Drawing.Point(467, 16);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(159, 50);
             this.btnEditar.TabIndex = 1;
@@ -71,7 +72,7 @@ namespace HandsOfWork.Views.Produtos
             // btnExcluir
             // 
             this.btnExcluir.Location = new System.Drawing.Point(648, 16);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(159, 50);
             this.btnExcluir.TabIndex = 2;
@@ -87,7 +88,7 @@ namespace HandsOfWork.Views.Produtos
             this.panel1.Controls.Add(this.btnNovo);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Location = new System.Drawing.Point(14, 403);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 79);
             this.panel1.TabIndex = 3;
@@ -95,7 +96,7 @@ namespace HandsOfWork.Views.Produtos
             // btnFechar
             // 
             this.btnFechar.Location = new System.Drawing.Point(23, 16);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(159, 50);
             this.btnFechar.TabIndex = 3;
@@ -147,6 +148,14 @@ namespace HandsOfWork.Views.Produtos
             this.Descricao.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Descricao.Width = 500;
             // 
+            // Categoria
+            // 
+            this.Categoria.DataPropertyName = "DescricaoCategoria";
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            this.Categoria.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // FormProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -163,7 +172,8 @@ namespace HandsOfWork.Views.Produtos
             this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Descricao});
+            this.Descricao,
+            this.Categoria});
             this.dgvProdutos.Location = new System.Drawing.Point(14, 34);
             this.dgvProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProdutos.MultiSelect = false;
@@ -176,7 +186,7 @@ namespace HandsOfWork.Views.Produtos
             this.dgvProdutos.Text = "dataGridView1";
             this.Controls.Add(this.dgvProdutos);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de produtos";
@@ -201,5 +211,6 @@ namespace HandsOfWork.Views.Produtos
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
     }
 }

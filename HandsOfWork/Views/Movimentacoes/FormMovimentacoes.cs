@@ -6,13 +6,13 @@ namespace HandsOfWork.Views.Movimentacoes
 {
     public partial class FormMovimentacoes : Form
     {
-        private readonly IPessoaService _pessoaService;
+        private readonly IPessoaFisicaService _pessoaFisicaService;
         private readonly IProdutoService _produtoService;
 
-        public FormMovimentacoes(IProdutoService produtoService, IPessoaService pessoaService)
+        public FormMovimentacoes(IProdutoService produtoService, IPessoaFisicaService pessoaFisicaService)
         {
             _produtoService = produtoService;
-            _pessoaService = pessoaService;
+            _pessoaFisicaService = pessoaFisicaService;
             InitializeComponent();
             CarregarClientes();
             CarregarProdutos();
@@ -29,7 +29,7 @@ namespace HandsOfWork.Views.Movimentacoes
 
         private void CarregarClientes()
         {
-            cboCliente.DataSource = _pessoaService.Listar();
+            cboCliente.DataSource = _pessoaFisicaService.Listar();
             cboCliente.ValueMember = "Id";
             cboCliente.DisplayMember = "Nome";
         }

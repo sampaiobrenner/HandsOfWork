@@ -7,13 +7,13 @@ namespace HandsOfWork.Views.Clientes
 {
     public partial class FormCliente : Form
     {
-        private readonly IPessoaService _pessoaService;
+        private readonly IPessoaFisicaService _pessoaFisicaService;
         private readonly IServiceProvider _serviceProvider;
 
-        public FormCliente(IServiceProvider serviceProvider, IPessoaService pessoaService)
+        public FormCliente(IServiceProvider serviceProvider, IPessoaFisicaService pessoaFisicaService)
         {
             _serviceProvider = serviceProvider;
-            _pessoaService = pessoaService;
+            _pessoaFisicaService = pessoaFisicaService;
             InitializeComponent();
             PreencherGrid();
         }
@@ -34,7 +34,7 @@ namespace HandsOfWork.Views.Clientes
             if (dgvClientes.SelectedRows.Count <= 0) return;
 
             var idCliente = Guid.Parse(dgvClientes.SelectedRows[0].Cells[0].Value.ToString() ?? string.Empty);
-            _pessoaService.Excluir(idCliente);
+            _pessoaFisicaService.Excluir(idCliente);
 
             PreencherGrid();
         }
@@ -56,7 +56,7 @@ namespace HandsOfWork.Views.Clientes
         {
             dgvClientes.AutoGenerateColumns = false;
             dgvClientes.DataSource = "";
-            dgvClientes.DataSource = _pessoaService.Listar();
+            dgvClientes.DataSource = _pessoaFisicaService.Listar();
             dgvClientes.Refresh();
         }
     }

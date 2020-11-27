@@ -3,7 +3,7 @@ using HandsOfWork.Services.Abstractions;
 
 namespace HandsOfWork.Services.Pessoas
 {
-    public interface IPessoaService : ICrudService<Pessoa>
+    public interface IPessoaJuridicaService : ICrudService<PessoaJuridica>
     {
     }
 }
